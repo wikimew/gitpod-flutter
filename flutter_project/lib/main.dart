@@ -104,7 +104,23 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 50,
                             color: Colors.blue,
                             child: Center(
-                                child: Text(index.toString() + ' hello')),
+                                child: Row(
+                              children: [
+                                Hero(
+                                    tag: index.toString(),
+                                    child: IconButton(
+                                      icon: Icon(Icons.access_alarm),
+                                      onPressed: () {
+                                        Navigator.of(context)
+                                            .push(MaterialPageRoute(
+                                                builder: (_) => NewPage(
+                                                      key: index,
+                                                    )));
+                                      },
+                                    )),
+                                Text(index.toString() + ' hello'),
+                              ],
+                            )),
                           ),
                         )),
               ),
@@ -117,6 +133,19 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class NewPage extends StatelessWidget {
+  const NewPage({int? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [Hero(tag: key.toString(), child: Icon(Icons.ac_unit))],
+      ),
     );
   }
 }
