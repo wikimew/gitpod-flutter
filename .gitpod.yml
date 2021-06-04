@@ -6,20 +6,12 @@ tasks:
       source ~/.bashrc
     init: |
       echo "Wait for the installation"
-      yes | sdk i java 8.0.232-open
-      sdk i kotlin
-      sdkmanager --update
-      yes | sdkmanager --licenses
       cd flutter_project
       flutter pub get
     command: >
       echo "Ready!"
 
 ports:
-  - port: 8080
-    onOpen: open-preview
-  - port: 5037
-    onOpen: ignore
   - port: 6080
 vscode:
   extensions:

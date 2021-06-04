@@ -12,9 +12,7 @@ RUN git clone https://github.com/flutter/flutter $FLUTTER_HOME
 RUN $FLUTTER_HOME/bin/flutter channel stable
 RUN $FLUTTER_HOME/bin/flutter upgrade
 RUN $FLUTTER_HOME/bin/flutter precache
-RUN $FLUTTER_HOME/bin/flutter config --enable-web --no-analytics
 RUN $FLUTTER_HOME/bin/flutter config --enable-linux-desktop
-RUN yes "y" | $FLUTTER_HOME/bin/flutter doctor --android-licenses -v
 ENV PUB_CACHE=/workspace/.pub_cache
 
 # Env
