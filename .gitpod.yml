@@ -10,8 +10,8 @@ tasks:
       sdk i kotlin
       sdkmanager --update
       yes | sdkmanager --licenses
+      cd flutter_project
       flutter pub get
-      flutter run -d web-server --no-resident
     command: >
       echo "Ready!"
 
@@ -21,7 +21,6 @@ ports:
   - port: 5037
     onOpen: ignore
   - port: 6080
-    protocol: "http"
 vscode:
   extensions:
     - Dart-Code.flutter@3.7.1:gujVOCgsbgoN2/po8X1tfA==
