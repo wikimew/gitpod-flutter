@@ -7,7 +7,7 @@
 # Preface
 This is a gitpod solution to create and test apps with [Flutter](https://flutter.dev/) when you don't have access to necessary tools to do so.
 
-Using the [device_preview](https://pub.dev/packages/device_preview) package will help with the feel and understanding when working in the vnc. Take a look at the master branches sample project for a little more understanding.
+Using the [device_preview](https://pub.dev/packages/device_preview) package will help with the feel and understanding when working in the vnc. Take a look at the master branches sample project for an example.
 
 
 
