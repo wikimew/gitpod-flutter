@@ -20,12 +20,14 @@ With the release of Flutter 2.0 the Flutter team has included support for Flutte
 *I strongly recommend anyone using this repo's dev branch to install [device_preview](https://pub.dev/packages/device_preview) package into their for a better experience.*
 # Setup 
 ### Once the gitpod container finishes loading up follow these steps:
-1. Open up the folder called "flutter_project" then open up the folder called "lib" the select and open main.dart.
-2. Press F5 to activate debug mode (Alternatively you can run flutter run -d linux to manually control reloads)
-3. Once debug mode loads click on the ports button on the bottom of the code editor to open "Ports View":
+1. In the console run flutter create {project name} *example: "flutter create sample_project*
+2. Afterwards in the console cd into the project as such "cd {project name}" *example: "cd sample_project*
+3. Open up your respective project folder then open up the folder called "lib" the select and open main.dart.
+4. Press F5 to activate debug mode (Alternatively you can run flutter run -d linux to manually control reloads)
+5. Once debug mode loads click on the ports button on the bottom of the code editor to open "Ports View":
 ![Access the port view](https://i.ibb.co/L9zKDRK/indication.png)
 *This is to access the ports section in gitpod*
-4. Hover over the port option 6080 and then you will be presented with three options. The option with the globe will open up a new tab with the vnc. Alternatively you can also click the open preview icon to use the simple browser extension to open up the vnc right in the code editor.
+6. Hover over the port option 6080 and then you will be presented with three options. The option with the globe will open up a new tab with the vnc. Alternatively you can also click the open preview icon to use the simple browser extension to open up the vnc right in the code editor.
 ![Open port in simple browser](https://i.ibb.co/mqd68v9/indication2.png)
 
 # Credit
